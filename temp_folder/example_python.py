@@ -1,4 +1,8 @@
 def add_numbers(a, b):
+    """
+    Returns addition of 2 numbers 
+    """
+
     return sum(a, b)
 
 # 1. extend add_numbers to allow any arbitrary number of parameters.
@@ -7,4 +11,7 @@ def add_numbers(a, b):
 # 4. Add documentation
 
 def average_of_numbers(a, b):
+    """
+    Returns average of two numbers
+    """
     return sum(a,b)/2
