@@ -28,8 +28,7 @@ dragon_lines = dragon_art.split("\n")
 
 # calculate the offset for the dragon's lines
 offset = len(player_lines) - len(dragon_lines)
-if offset < 0:
-    offset = 0
+offset = max(offset, 0)
 
 # horizontally concatenate the player art and dragon art
 for i in range(max(len(player_lines), len(dragon_lines))):

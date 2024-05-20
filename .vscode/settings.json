@@ -17,6 +17,8 @@
     "pylint.args": [
         "--disable=missing-class-docstring",
         "--disable=invalid-name",
+        "--disable=unrecognized-option",
+        "--disable=too-few-public-methods"
     ],
 //     "flake8.args": [
 //         "--ignore=E501"

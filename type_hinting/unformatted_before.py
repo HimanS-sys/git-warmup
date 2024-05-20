@@ -19,36 +19,36 @@ parallel_keys = {
 }
 
 # long lines of code
-VALUE = "hi"
-VALUE.strip("a").strip("b").strip("c").strip("d").strip("e").strip("f").strip(
-    "g"
-).strip("h").strip("h").strip("h").strip("h").strip("h").strip("h").strip("h").strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-).strip(
-    "h"
-)
+# VALUE = "hi"
+# VALUE.strip("a").strip("b").strip("c").strip("d").strip("e").strip("f").strip(
+#     "g"
+# ).strip("h").strip("h").strip("h").strip("h").strip("h").strip("h").strip("h").strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# ).strip(
+#     "h"
+# )
 
 
 # functions get reduced (trailing comma, fewer merge conflicts!)

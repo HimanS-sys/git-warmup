@@ -20,5 +20,10 @@ def average_of_numbers(a, b):
     """
     return sum(a, b) / 2
 
+
 def multiply_numbers(a, b):
-    return a*b
+    """
+    Multiply two numbers
+    """
+    result = a * b
+    return result
