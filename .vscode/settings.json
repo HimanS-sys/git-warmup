@@ -1,0 +1,29 @@
+{
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        {
+            "color": "#ADD8E6",
+            "column": 79,
+        },
+        {
+            "color": "#800080",
+            "column": 99,
+        },
+    ],
+    "black-formatter.args": [
+        "--line-length=99",
+    ],
+    "pylint.args": [
+        "--disable=missing-class-docstring",
+        "--disable=invalid-name",
+    ],
+//     "flake8.args": [
+//         "--ignore=E501"
+//     ]
+"[python]": {
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always"
+    },
+  },
+}

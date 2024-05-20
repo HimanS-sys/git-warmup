@@ -1,15 +1,19 @@
 # linting.py
 
 """This file shows example linting errors"""
+
+from dataclasses import dataclass
+
 MY_VARIABLE = 1
 
 
 class MyClass:
+    """
+    An example class
+    """
+
     def __init__(self):
         self.my_variable = 1
-
-
-from dataclasses import dataclass
 
 
 def divide_numbers(a: int, b: float) -> float:
@@ -28,6 +32,10 @@ def divide_numbers(a: int, b: float) -> float:
 
 @dataclass
 class Book:
+    """
+    A book class
+    """
+
     title: str
     num_pages: int
     author: str
@@ -46,173 +54,182 @@ class Book:
     aaf: int
 
 
-my_string = (
+MY_STRING = (
     "This is a very long string that should be split "
     + "into multiple lines to avoid pylint error C0301"
 )
 
 
-my_string = "Hello, World!   "
+MY_STRING = "Hello, World!   "
 
 
-my_variable = 1
+MY_VARIABLE = 1
 
 
-def my_function():
+# def my_function():
+#     """
+#     demo function that prints Hello World!
+#     """
+#     print("Hello, World!")
+
+
+BOOL_VAL = True
+
+if BOOL_VAL:
+    print("Hello, World!")
     print("Hello, World!")
 
 
-if True:
-    print("Hello, World!")
-    print("Hello, World!")
+class MyClass2:
+    """
+    Demo class: MyClass2
+    """
 
-
-class MyClass:
     def __init__(self):
         self.my_variable = 1
 
 
-my_class = MyClass()
-print(my_class.my_variable_does_not_exist)
+# my_class = MyClass2()
+# print(my_class.my_variable_does_not_exist)
 
 
-def my_function(my_variable):
-    print(my_variable)
+# def my_function(my_variable):
+#     print(my_variable)
 
 
-my_function()
+# my_function()
 
 
-def my_function(my_variable):
-    print(my_variable)
+# def my_function(my_variable):
+#     print(my_variable)
 
 
-my_function(my_variable=1)
+# my_function(my_variable=1)
 
 
-class MyClass:
-    def my_method(self, my_variable):
-        print(my_variable)
+# class MyClass:
+#     def my_method(self, my_variable):
+#         print(my_variable)
 
 
-my_class = MyClass()
-my_class.my_method()
+# my_class = MyClass()
+# my_class.my_method()
 
 
-my_variable = 1
-for i in my_variable:
-    print(i)
+# my_variable = 1
+# for i in my_variable:
+#     print(i)
 
 
-my_variable = 1
-print(my_variable[0])
+# my_variable = 1
+# print(my_variable[0])
 
 
-my_variable = 1
-my_string = "Hello, World!"
-print(my_variable + my_string)
+# my_variable = 1
+# my_string = "Hello, World!"
+# print(my_variable + my_string)
 
 
-my_string = "Hello, World!"
-print(f"{my_string} {1}")
+# my_string = "Hello, World!"
+# print(f"{my_string} {1}")
 
 
-my_variable = 1
-my_variable_2 = 2
+# my_variable = 1
+# my_variable_2 = 2
 
 
-try:
-    my_variable = 1 / 0
-except:
-    pass
+# try:
+#     my_variable = 1 / 0
+# except:
+#     pass
 
 
-def my_function():
-    pass
+# def my_function():
+#     pass
 
 
-my_string = "Hello, World!   "
+# my_string = "Hello, World!   "
 
 
-my_variable = 1
+# my_variable = 1
 
 
-from __future__ import print_function
+# from __future__ import print_function
 
-import os
-import sys
+# import os
+# import sys
 
 
-def my_function():
-    pass
+# def my_function():
+#     pass
 
 
-if True:
-    import os
+# if True:
+#     import os
 
 
-class MyClass:
-    def __init__(self):
-        self.my_variable = 1
+# class MyClass:
+#     def __init__(self):
+#         self.my_variable = 1
 
 
-my_class = MyClass()
-print(my_class.my_variable_does_not_exist)
+# my_class = MyClass()
+# print(my_class.my_variable_does_not_exist)
 
 
-def my_function(my_variable):
-    print(my_variable)
+# def my_function(my_variable):
+#     print(my_variable)
 
 
-my_function()
+# my_function()
 
 
-def my_function(my_variable):
-    print(my_variable)
+# def my_function(my_variable):
+#     print(my_variable)
 
 
-class MyClass:
-    def my_method(self, my_variable):
-        print(my_variable)
+# class MyClass:
+#     def my_method(self, my_variable):
+#         print(my_variable)
 
 
-my_class = MyClass()
-my_class.my_method()
+# my_class = MyClass()
+# my_class.my_method()
 
 
-my_variable = 1
-for i in my_variable:
-    print(i)
+# my_variable = 1
+# for i in my_variable:
+#     print(i)
 
 
-my_variable = 1
-print(my_variable[0])
+# my_variable = 1
+# print(my_variable[0])
 
 
-my_variable = 1
-my_string = "Hello, World!"
-print(my_variable + my_string)
+# my_variable = 1
+# my_string = "Hello, World!"
+# print(my_variable + my_string)
 
 
-my_string = "Hello, World!"
-print(f"{my_string} {1}")
+# my_string = "Hello, World!"
+# print(f"{my_string} {1}")
 
 
-my_variable = 1
-print(my_variable_does_not_exist)
+# my_variable = 1
+# print(my_variable_does_not_exist)
 
 
-my_variable = 1
+# my_variable = 1
 
 
-my_variable = 1
-print(my_variable_does_not_exist)
+# my_variable = 1
+# print(my_variable_does_not_exist)
 
 
-try:
-    ...
-except:
-    ...
+# try:
+#     ...
+# except:
+#     ...
 
-my_variable = 1
-print(my_variable_does_not_exist)
+# my_variable = 1
+# print(my_variable_does_not_exist)

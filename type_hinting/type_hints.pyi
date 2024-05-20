@@ -2,9 +2,10 @@
 
 
 class Duck:
-    """ Stub for the class Duck """
+    """Stub for the class Duck"""
+
     def quack(self) -> None:
         """say quack"""
 
     def swim(self) -> None:
-        """ swim """
+        """swim"""

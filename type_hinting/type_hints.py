@@ -5,8 +5,8 @@ class Duck:
     """
     class representing duck
     """
-    def __init__(self) -> None:
-        ...
+
+    def __init__(self) -> None: ...
 
     def __getattr__(self, attr: str):
         if attr == "quack":

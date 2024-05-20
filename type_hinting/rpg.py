@@ -1,4 +1,4 @@
-# rpg.py
+""" rpg.py """
 
 import random
 
@@ -47,9 +47,8 @@ for i in range(max(len(player_lines), len(dragon_lines))):
 while True:
     ph_bar = "Health: " + "x" * ph + " " * (mh - ph)
     dh_bar = "Health: " + "x" * dh + " " * (mh - dh)
-    pa = "         /|\\       \n         ( )       \n         / \\       \n        /   \\      \n       /     \\     \n      /       \\    \n     /         \\   \n    /           \\  \n   /             \\ \n  /               \\"
-    da = "      _,=''=,_   \n     /         \\  \n    |  /\\_/\\  |  \n    |  |  |  |  \n  __\\|  |  |/__\n /`    \\  \\    `\\\n/       \\_/     \\\n|                  |\n|                  |\n \\                /\n  \\  /\\    /\\  /\n   \\/  \\  /  \\/\n        \\/"
-    print(combined_art)
+    pa = "/           \\  \n   /             \\ \n  /               \\"
+    da = "      _,=''=,_   \n     /         \\  \n    |  /\\_/\\  |  \n    |  |  |  |  \n"
     print(f"Player HP: {ph_bar}   Dragon HP: {dh_bar}")
     print(f"Player Defense: {0}     Dragon Defense: {dd}")
     pm = input("Enter 'a' to attack or 'h' to heal: ")

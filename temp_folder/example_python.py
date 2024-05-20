@@ -1,4 +1,4 @@
-""" a module to understand git"""
+""" demo module to practice git """
 
 
 def add_numbers(a, b):
