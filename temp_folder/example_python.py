@@ -19,3 +19,6 @@ def average_of_numbers(a, b):
     Returns average of two numbers
     """
     return sum(a, b) / 2
+
+def multiply_numbers(a, b):
+    return a*b
