@@ -5,7 +5,6 @@ def add_numbers(a, b):
     """
     Returns addition of 2 numbers
     """
-
     return sum(a, b)
 
 
