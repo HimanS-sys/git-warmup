@@ -12,7 +12,7 @@
         },
     ],
     "black-formatter.args": [
-        "--line-length=99",
+        "--config ${workspaceFolder}/.black.toml",
     ],
     "pylint.args": [
         "--disable=missing-class-docstring",

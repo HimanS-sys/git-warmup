@@ -1,8 +1,16 @@
 """A test module to check mypy functionality"""
 
 from __future__ import annotations
+
 from dataclasses import dataclass
-from typing import List, Generic, Dict, TypeVar, Union, NamedTuple  # TypedDict
+from typing import (  # TypedDict
+    Dict,
+    Generic,
+    List,
+    NamedTuple,
+    TypeVar,
+    Union,
+)
 
 
 class Duck:
@@ -137,7 +145,9 @@ def raise_exception(err: Texception):
     raise err
 
 
-def make_list_of_addable_entity(a: TaddableEntity, b: TaddableEntity) -> List[TaddableEntity]:
+def make_list_of_addable_entity(
+    a: TaddableEntity, b: TaddableEntity
+) -> List[TaddableEntity]:
     """
     A function demonstrating grouping of types for common operation
     """

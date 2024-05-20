@@ -1,0 +1,11 @@
+black==24.4.2
+click==8.1.7
+colorama==0.4.6
+isort==5.13.2
+mando==0.7.1
+mypy-extensions==1.0.0
+packaging==24.0
+pathspec==0.12.1
+platformdirs==4.2.2
+radon==6.0.1
+six==1.16.0
