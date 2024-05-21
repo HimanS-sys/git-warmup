@@ -1,6 +1,6 @@
 # linting.py
 
-"""This file shows example linting errors"""
+"""This file shows example linting errors."""
 
 from dataclasses import dataclass
 
@@ -8,11 +8,10 @@ MY_VARIABLE = 1
 
 
 class MyClass:
-    """
-    An example class
-    """
+    """An example class."""
 
     def __init__(self):
+        """Initialize the class object attributes."""
         self.my_variable = 1
 
 
@@ -32,9 +31,7 @@ def divide_numbers(a: int, b: float) -> float:
 
 @dataclass
 class Book:
-    """
-    A book class
-    """
+    """A book class."""
 
     title: str
     num_pages: int
@@ -81,11 +78,10 @@ if BOOL_VAL:
 
 
 class MyClass2:
-    """
-    Demo class: MyClass2
-    """
+    """Demo class: MyClass2."""
 
     def __init__(self):
+        """Initialize the class object attributes."""
         self.my_variable = 1
 
 

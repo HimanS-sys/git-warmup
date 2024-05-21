@@ -1,4 +1,4 @@
-""" rpg.py """
+"""rpg.py."""
 
 import random
 

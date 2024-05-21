@@ -1,10 +1,8 @@
-""" demo module to practice git """
+"""demo module to practice git."""
 
 
 def add_numbers(a, b):
-    """
-    Returns addition of 2 numbers
-    """
+    """Return the addition of the given numbers."""
     return sum(a, b)
 
 
@@ -15,15 +13,11 @@ def add_numbers(a, b):
 
 
 def average_of_numbers(a, b):
-    """
-    Returns average of two numbers
-    """
+    """Return the average of the given two numbers."""
     return sum(a, b) / 2
 
 
 def multiply_numbers(a, b):
-    """
-    Multiply two numbers
-    """
+    """Return the multiplication of two numbers."""
     result = a * b
     return result

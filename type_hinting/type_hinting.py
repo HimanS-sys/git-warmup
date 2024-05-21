@@ -1,4 +1,4 @@
-"""A test module to check mypy functionality"""
+"""A test module to check mypy functionality."""
 
 from __future__ import annotations
 
@@ -16,7 +16,6 @@ from typing import (  # TypedDict
 class Duck:
     """
     A Class representing a duck.
-    ...
 
     Attributes
     ----------
@@ -29,12 +28,11 @@ class Duck:
     """
 
     def __init__(self, name) -> None:
+        """Initialize the Duck object."""
         self.name = name
 
     def speak(self):
-        """
-        Returns a quack from the given duck.
-        """
+        """Return a quack from the given duck."""
         print(f"{self.name}: quack!")
 
 
@@ -45,9 +43,7 @@ def consume_many_type(
     binary: bytes,
     obj: object,
 ) -> None:
-    """
-    A demo function to check type hinting
-    """
+    """Create an object with multipme data type."""
     print(
         f"values are\nnum:{num}\ndecimal: {decimal}\nbinary: {binary!r}\n \
         boolean: {boolean}\nobj: {obj}"
@@ -65,24 +61,18 @@ student_dict: Dict[str, Union[str, int]]
 
 
 class Point(NamedTuple):
-    """
-    A class representing NamedTuple
-    """
+    """A class representing NamedTuple."""
 
     x: int
     y: int
 
 
 class LivingOrganism:
-    """
-    Class representing a living organism
-    """
+    """Class representing a living organism."""
 
 
 class Animal(LivingOrganism):
-    """
-    class representing an animal
-    """
+    """class representing an animal."""
 
 
 Tfriend = TypeVar("Tfriend")
@@ -90,9 +80,7 @@ Tfriend = TypeVar("Tfriend")
 
 @dataclass
 class Student(Generic[Tfriend]):
-    """
-    A class demonstrating TypedDict
-    """
+    """A class demonstrating TypedDict."""
 
     name: str
     age: int
@@ -139,25 +127,19 @@ Texception = TypeVar("Texception", bound=Exception)
 
 
 def raise_exception(err: Texception):
-    """
-    raise custom exception
-    """
+    """Raise custom exception."""
     raise err
 
 
 def make_list_of_addable_entity(
     a: TaddableEntity, b: TaddableEntity
 ) -> List[TaddableEntity]:
-    """
-    A function demonstrating grouping of types for common operation
-    """
+    """Return a list of editable type."""
     return [a, b]
 
 
 def basic_add(a: TaddableEntity, b: TaddableEntity) -> TaddableEntity:
-    """
-    A function demonstrating grouping of types for common operation
-    """
+    """Return addition of two entitiy provided."""
     return a + b
 
 

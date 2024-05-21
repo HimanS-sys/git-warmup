@@ -1,12 +1,10 @@
-""" module to understand cyclomatic complexity """
+"""Module to understand cyclomatic complexity."""
 
 # import datetime
 
 
 def print_day_and_month(day: str, month: str):
-    """
-    print day and month
-    """
+    """Print day and month."""
     print(day)
     print(month)
 

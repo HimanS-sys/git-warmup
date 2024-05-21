@@ -1,22 +1,22 @@
-""" Module containing example of bad formatting """
+"""Module containing example of bad formatting."""
 
 
-def say_message(message: str) -> None:
-    """
-    example code that prints a message
-    """
-    print(message)
+# def say_message(message: str) -> None:
+#     """
+#     example code that prints a message
+#     """
+#     print(message)
 
 
 # parallel_equals_signs________ = "thing"
 # parallel_equals_signs = "thing"
 # parallel_equals_signs__ = "thing"
 
-parallel_keys = {
-    "parallel_key___________": 1,
-    "parallel_key___": 2,
-    "parallel_key": 3,
-}
+# parallel_keys = {
+#     "parallel_key___________": 1,
+#     "parallel_key___": 2,
+#     "parallel_key": 3,
+# }
 
 # long lines of code
 # VALUE = "hi"

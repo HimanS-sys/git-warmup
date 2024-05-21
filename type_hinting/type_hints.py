@@ -1,14 +1,14 @@
-"Module for practicing type-hinting"
+"""Module for practicing type-hinting."""
 
 
 class Duck:
-    """
-    class representing duck
-    """
+    """Class representing duck."""
 
-    def __init__(self) -> None: ...
+    def __init__(self) -> None:
+        """Initialize the class."""
 
     def __getattr__(self, attr: str):
+        """Return result based on the attribute called."""
         if attr == "quack":
             return lambda: print("quack!")
         if attr == "swim":

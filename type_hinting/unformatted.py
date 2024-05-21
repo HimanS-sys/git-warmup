@@ -1,10 +1,8 @@
-""" module to test formatting, linting """
+"""Module to test formatting, linting."""
 
 
 def say_message(message: str) -> None:
-    """
-    demo message function
-    """
+    """Demo message function."""
     print(message)
 
 
