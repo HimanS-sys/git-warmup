@@ -75,6 +75,7 @@ BOOL_VAL = True
 if BOOL_VAL:
     print("Hello, World!")
     print("Hello, World!")
+    print("Hello, world!")
 
 
 class MyClass2:
