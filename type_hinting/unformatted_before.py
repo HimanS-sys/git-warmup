@@ -1,6 +1,5 @@
 """Module containing example of bad formatting."""
 
-
 # def say_message(message: str) -> None:
 #     """
 #     example code that prints a message
