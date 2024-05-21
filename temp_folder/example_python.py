@@ -14,7 +14,8 @@ def add_numbers(a, b):
 
 def average_of_numbers(a, b):
     """Return the average of the given two numbers."""
-    return sum(a, b) / 2
+    result = sum(a, b) / 2
+    return result
 
 
 def multiply_numbers(a, b):
