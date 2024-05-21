@@ -2,9 +2,54 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+    rev: v4.6.0
     hooks:
+    -   id: check-merge-conflict
     -   id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
     -   id: end-of-file-fixer
+    -   id: check-toml
     -   id: check-yaml
+        args: ["--unsafe"]
+    -   id: check-symlinks
     -   id: check-added-large-files
+        args: ["--maxkb=500"]
+        exclude: |
+            (?x)(
+                ^example/large/file.csv |
+                ^example/large/sklearn-model.pkl
+            )
+    -   id: requirements-txt-fixer
+    -   id: forbid-new-submodules
+    # -   id: no-commit-to-branch
+    #     args: ["--branch=main"]
+    -   id: detect-aws-credentials
+    -   id: detect-private-key
+
+-   repo: https://github.com/PyCQA/pylint
+    rev: v3.2.2
+    hooks:
+    -   id: pylint
+        args: [--rcfile=.pylintrc]
+
+-   repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+    -   id: isort
+        name: isort (python)
+        args: [--settings=.isort.cfg]
+
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: "v1.10.0"
+    hooks:
+    -   id: mypy
+        args: [--no-strict-optional, --ignore-missing-imports]
+
+-   repo: https://github.com/pycqa/flake8
+    rev: "7.0.0"
+    hooks:
+    -   id: flake8
+        additional_dependencies:
+        -   radon
+        -   flake8-docstrings
+        args: [--config=.flake8]
