@@ -10,7 +10,7 @@ class Duck:
     def __getattr__(self, attr: str):
         """Return result based on the attribute called."""
         if attr == "quack":
-            return lambda: print("quack!")
+            return lambda: print("quack!quack!")
         if attr == "swim":
             return lambda: print("splash!!")
         raise AttributeError
